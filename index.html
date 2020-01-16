@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <link rel="stylesheet" type="text/css" href="style_map.css">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+        <script>
+            L_NO_TOUCH = true;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding:0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link href="https://fonts.googleapis.com/css?family=Anton|Dancing+Script&display=swap" rel="stylesheet"> 
+    
+        <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet"> 
+
+<style>
+#map_a6a8dca6e8ae485fb8f6963e456ad830 {
+                    position: relative;
+                    width: 100%;
+                    height: 700px;
+                    margin: 0%;
+                    padding-left: 300px ;
+                    }
+                    
+
+.zoom {
+  padding: 50px;
+  transition: transform .8s;
+  width: 500px;
+  height: 480px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+                    
+                    </style>
+
+
+
+</head>
+
+<body>    
+	
+<!-- nav bar -->	
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="symbol.jpg" width="35" height="35" ></a>
+    </div>
+    <ul class="nav navbar-nav" style="padding-left: 680px">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#map_a6a8dca6e8ae485fb8f6963e456ad830">mylocation</a></li>
+    </ul>
+  </div>
+</nav>	
+	
+	
+	
+<!-- for hello world -->    
+<div class="intro" >
+ <img src="1.jpg" width="1865" height="1000">
+</div>
+<br><br><br><br><br><br>
+
+
+
+
+<!-- grid -->
+<div class = "Acco">
+	<div class="container">
+	<div class = "row">
+	<div class = "col-sm-3 col-md-3 col-lg-3">
+	</div>
+	
+	<div class = "col-sm-6 col-md-6 col-lg-6" >
+		 <h2 style = "font-family: 'Anton', sans-serif";> &nbsp &nbsp &nbsp Educational Accomplishments:-</h2><br>
+		<h3 style= "font-family: 'Dancing Script', cursive";>1 Passed 10th from CBSE board with aggregate of 9.4 cgpa.</h3><br>
+	<h3 style= "font-family: 'Dancing Script', cursive";> 2 Passed 12th from CBSE board with aggregate of 84%.</h3><br>
+	<h3 style= "font-family: 'Dancing Script', cursive";>3 Currently Pursuing B.tech in CSE from <a href="https://www.abes.ac.in/">ABES Engineering College</a>, Ghaziabad</h3>
+	<br><br><br><br><br><br>
+	</div>
+	<div class = "col-sm-3 col-md-3 col-lg-3" ></div>
+	</div>
+</div>
+
+
+	  <div class="container">   
+	<div class = "row">
+	<div class = "col-sm-12 col-md-12 col-lg-12" >
+   	
+   	<h1 style = "font-family: 'Anton', sans-serif";> My Location On Map Using Leaflet</h1>
+   	<!-- map -->
+            <div class="folium-map" id="map_a6a8dca6e8ae485fb8f6963e456ad830" >              
+	</div>
+	</div></div></div>
+<div>
+	<br><br><br><br><br><br><br>              
+	</div>
+
+	
+</div>            
+     <div class="container">   
+	<div class = "row">
+	<div class = "col-sm-5 col-md-5 col-lg-5" >
+	<h1 style="font-family: 'Anton', sans-serif">PROBLEM SOLVER</h1>
+	<img src = "code.jpg" width ="500" height="400">
+	<h3 style= "font-family: 'Acme', sans-serif";>1- <a href="">Codechef</a></h3><br>
+	<h3 style= "font-family: 'Acme', sans-serif";>2- <a href="">Stopstalk</a></h3><br>
+	<h3 style= "font-family: 'Acme', sans-serif";>3- <a href="">Codeforces</a></h3><br>
+	<h3 style= "font-family: 'Acme', sans-serif";>4- <a href="">Spoj</a></h3><br>
+	<h3 style= "font-family: 'Acme', sans-serif";>5- <a href="">Hackerearth</a></h3><br>
+	<h3 style= "font-family: 'Acme', sans-serif";>6- <a href="">Hackerrank</a></h3><br>
+</div>
+	<div class = "col-sm-2 col-md-2 col-lg-2" >
+	</div>
+	
+	<div class = "col-sm-5 col-md-5 col-lg-5" >
+	<h1 style="font-family: 'Anton', sans-serif">WEB DESIGNER</h1>
+	<img src = "webde.jpg" width ="500" height="400">
+	<h3 style="font-family: 'Acme', sans-serif";>1- HTML</h3><br>
+	<h3 style="font-family: 'Acme', sans-serif";>2- CSS</h3><br>
+	<h3 style="font-family: 'Acme', sans-serif";>3- Bootstrap</h3><br>
+	<h3 style="font-family: 'Acme', sans-serif";>4- Leaflet js</h3><br>
+	<h3 style= "font-family: 'Acme', sans-serif";>5- <a href="">Project on git</a></h3><br>
+	
+	
+	</div>
+</div>	
+</div>
+</div>
+</div>
+
+
+<div class="container">   
+	<div class = "row">
+	<div class = "col-sm-3 col-md-3 col-lg-3" >
+	</div>
+	<div class = "col-sm-6 col-md-6 col-lg-6" >
+	<h1  style="font-family: 'Anton', sans-serif">Stuggling On</h1>
+	<h3 style= "font-family: 'Acme', sans-serif">1- Leaflet</h3>
+	<h3 style= "font-family: 'Acme', sans-serif">2- Data Structure</h3>
+	<h3 style= "font-family: 'Acme', sans-serif">3- Machine learning</h3>
+	<h3 style= "font-family: 'Acme', sans-serif">4- Javascript</h3>
+	<h3 style= "font-family: 'Acme', sans-serif">5- Working on api</h3>
+	</div>
+	<div class = "col-sm-3 col-md-3 col-lg-3" >
+	</div>
+	</div>
+	<div>   
+		<br><br><br><br><br><br><br>              
+	</div>
+</div>
+	<div class="container">  
+	<div class = "row" >
+		<div class = "col-sm-4 col-md-4 col-lg-4">
+		<img src="3.jpg" height ="500" width="500" class="zoom">
+	</div>
+	<div class = "col-sm-2 col-md-2 col-lg-2 " >
+		</div>
+	<div class = "col-sm-6 col-md-6 col-lg-6" >
+	<br><br>
+	<h1 style="font-family: 'Anton', sans-serif">Contact me:-  </h1><br><br>
+	<h2 style="font-family: 'Anton', sans-serif">Contact no.:- 8126533499</h2><br>
+	<h2 style="font-family: 'Anton', sans-serif">Email Id:- tanuj07yadav07@gmail.com</h2>
+	</div>
+	</div>
+</div>
+	
+
+<div>
+	<br><br><br><br><br><br><br>              
+	</div>
+ 
+<h1 style="font-family: 'Anton', sans-serif">Site is under ocnstruction and will be updating in future</h1> 
+  
+</body>
+<script>    
+    
+            var map_a6a8dca6e8ae485fb8f6963e456ad830 = L.map(
+                "map_a6a8dca6e8ae485fb8f6963e456ad830",
+                {
+                    center: [28.633100,77.446837],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+	
+        
+    
+            var tile_layer_ca0260ea28424acd91071cf7123387d8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a6a8dca6e8ae485fb8f6963e456ad830);
+        
+			var marker = L.marker([28.634115,77.445062]).addTo(map_a6a8dca6e8ae485fb8f6963e456ad830);
+			marker.bindPopup("<b>Hello!</b><br>I am here.").openPopup();
+			var circle = L.circle([28.633578,77.445663], {
+			color: 'red',
+			fillColor: '#f03',
+			fillOpacity: 0.5,
+			radius: 200
+			}).addTo(map_a6a8dca6e8ae485fb8f6963e456ad830);
+			marker.bindPopup("<b>Hello!</b><br>Here i am.").openPopup();
+			circle.bindPopup("ABES ENGINEERING COLLEGE");
+</script>

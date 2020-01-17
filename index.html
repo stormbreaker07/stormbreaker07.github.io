@@ -63,7 +63,25 @@
   transform: scale(1.5); 
 }
 
-                    
+#aasd {
+background-color: white;
+}
+
+#upcome {
+background-color: lightblue;
+}   
+#skills {
+background-color: lightgreen;
+}
+#acom {
+background-color: lightpink;
+}
+#map1 {
+background-color:  #ffc05a;
+}
+#end {
+background-color:  #d45aff;
+}
                     </style>
 
 
@@ -93,13 +111,14 @@
 <div class="intro" >
  <img src="1.jpg" width="1865" height="1000">
 </div>
-<br><br><br><br><br><br>
+
 
 
 
 
 <!-- grid -->
-<div class = "Acco">
+<div class = "Acco" id="acom">
+<br><br><br><br><br><br>
 	<div class="container">
 	<div class = "row">
 	<div class = "col-sm-3 col-md-3 col-lg-3">
@@ -115,8 +134,10 @@
 	<div class = "col-sm-3 col-md-3 col-lg-3" ></div>
 	</div>
 </div>
+</div>
 
-
+<div id="map1">
+	  <br><br><br><br><br><br>
 	  <div class="container">   
 	<div class = "row">
 	<div class = "col-sm-12 col-md-12 col-lg-12" >
@@ -126,7 +147,6 @@
             <div class="folium-map" id="map_a6a8dca6e8ae485fb8f6963e456ad830" >              
 	</div>
 	</div></div></div>
-<div>
 	<br><br><br><br><br><br><br>              
 	</div>
 
@@ -165,6 +185,7 @@
 </div>
 </div>
 
+<div id="upcome">
 <div class="container">   
 	<div class = "row">
 	<div class = "col-sm-3 col-md-3 col-lg-3" >
@@ -175,7 +196,7 @@
 	<h3 style= "font-family: 'Acme', sans-serif">2- Data Structure</h3>
 	<h3 style= "font-family: 'Acme', sans-serif">3- Machine learning</h3>
 	<h3 style= "font-family: 'Acme', sans-serif">4- Javascript</h3>
-	<h3 style= "font-family: 'Acme', sans-serif">5- Working on api</h3>
+	<h3 style= "font-family: 'Acme', sans-serif">5- Django</h3>
 	</div>
 	<div class = "col-sm-3 col-md-3 col-lg-3" >
 	</div>
@@ -183,6 +204,7 @@
 	<div>   
 		<br><br><br><br><br><br><br>              
 	</div>
+</div>
 </div>
 <div id="aasd">
 	<div class="container">  
@@ -202,11 +224,12 @@
 </div>
 </div>	
 
-<div>
+<div id="end">
 	<br><br><br><br><br><br><br>              
-	</div>
- 
+	
 <h1 style="font-family: 'Anton', sans-serif">Site is under construction and will be updating in future</h1> 
+  <br><br><br><br><br><br>
+  </div>
   
 </body>
 <script>    
@@ -240,3 +263,4 @@
 			marker.bindPopup("<b>Hello!</b><br>Here i am.").openPopup();
 			circle.bindPopup("ABES ENGINEERING COLLEGE");
 </script>
+

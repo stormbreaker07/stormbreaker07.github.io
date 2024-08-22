@@ -1432,3 +1432,9 @@ body.offcanvas {
 .image-style {
 
 }
+
+.weekend-project {
+	margin-top: 24px;
+    font-family: "Quicksand", Arial, sans-serif !important;
+	font-size: 26px;
+}
